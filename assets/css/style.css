@@ -2,8 +2,42 @@ body{
     margin: 0;
     padding: 0;
     background-color: #000000;
+    font-family: "Raleway", sans-serif;
+    color: #ffffff;
 }
 
 .navbar-brand img{
     width: 30px;
+}
+
+.navbar h3{}
+
+.card{
+    width: 17rem !important;
+    padding: 0;
+}
+
+.card img{
+    height: 10rem;
+}
+
+footer .container{
+    display: flex;
+    align-items:baseline;
+    justify-content: space-around;
+}
+
+.prueba{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.prueba img{
+    width: 100px;
+}
+
+a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
