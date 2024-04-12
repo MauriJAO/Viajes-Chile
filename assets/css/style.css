@@ -6,11 +6,9 @@ body{
     color: #ffffff;
 }
 
-.navbar-brand img{
+.logo img{
     width: 30px;
 }
-
-.navbar h3{}
 
 .card{
     width: 17rem !important;
@@ -27,17 +25,15 @@ footer .container{
     justify-content: space-around;
 }
 
-.prueba{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.prueba img{
-    width: 100px;
+.logo h3{
+    margin-bottom: 0;
 }
 
-a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+i{
+    font-size: 25px;
+    padding-right: 10px;
+}
+
+.somos i{
+    padding: 5px;
 }
