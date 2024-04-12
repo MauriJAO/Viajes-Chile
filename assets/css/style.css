@@ -37,3 +37,11 @@ i{
 .somos i{
     padding: 5px;
 }
+
+.fa-solid:active{
+    color: red;
+} 
+    
+html {
+    scroll-behavior: smooth;
+}

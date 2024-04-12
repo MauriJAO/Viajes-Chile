@@ -14,6 +14,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!--Iconos-->
     <script src="https://kit.fontawesome.com/1639eff0f8.js" crossorigin="anonymous"></script>
+    <!--Jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
     <header>
@@ -32,13 +34,13 @@
                     <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                   </li>
                   <li class="nav-item d-none d-sm-block">
-                    <a class="nav-link" href="#">Quienes Somos</a>
+                    <a class="nav-link" href="#nosotros">Quienes Somos</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Destacados</a>
+                    <a class="nav-link" href="#destacados">Destacados</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Contacto</a>
+                    <a class="nav-link" href="#contacto">Contacto</a>
                   </li>
                 </ul>
               </div>
@@ -67,34 +69,36 @@
         </div>
     </header>
     <main class="container mt-4">
-        <section class="d-none d-sm-block somos">
+        <!--Sección nosotros-->
+        <section class="d-none d-sm-block somos" id="nosotros">
             <h2 class="text-center">¿QUIÉNES SOMOS?</h2>
             <hr>
             <div class="d-flex p-3 gap-5">
                 <div>
                     <div class="bg-info d-flex justify-content-center">
-                        <i class="fa-solid fa-plane"></i>
+                        <i class="fa-solid fa-plane oculta1"></i>
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam asperiores pariatur reiciendis illo error sapiente laudantium sed laboriosam ipsa tenetur odio quia accusantium numquam, facilis saepe minima facere molestiae laborum.
+                    <p class="info1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam asperiores pariatur reiciendis illo error sapiente laudantium sed laboriosam ipsa tenetur odio quia accusantium numquam, facilis saepe minima facere molestiae laborum.
                     Vitae, ipsum repudiandae cum autem consectetur beatae molestiae magni corrupti quaerat iusto nisi veritatis earum illum impedit dolor repellat ipsa labore exercitationem suscipit. Eius delectus fugit, quia unde eum illo.</p>
                 </div>
                 <div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam asperiores pariatur reiciendis illo error sapiente laudantium sed laboriosam ipsa tenetur odio quia accusantium numquam, facilis saepe minima facere molestiae laborum.
+                    <p class="info2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam asperiores pariatur reiciendis illo error sapiente laudantium sed laboriosam ipsa tenetur odio quia accusantium numquam, facilis saepe minima facere molestiae laborum.
                     Vitae, ipsum repudiandae cum autem consectetur beatae molestiae magni corrupti quaerat iusto nisi veritatis earum illum impedit dolor repellat ipsa labore exercitationem suscipit. Eius delectus fugit, quia unde eum illo.</p>
                     <div class="bg-info d-flex justify-content-center"> 
-                        <i class="fa-solid fa-mountain"></i>
+                        <i class="fa-solid fa-mountain oculta2"></i>
                     </div>
                 </div>
                 <div>
                     <div class="bg-info d-flex justify-content-center">
-                        <i class="fa-solid fa-map-location-dot"></i>
+                        <i class="fa-solid fa-map-location-dot oculta3"></i>
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam asperiores pariatur reiciendis illo error sapiente laudantium sed laboriosam ipsa tenetur odio quia accusantium numquam, facilis saepe minima facere molestiae laborum.
+                    <p class="info3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam asperiores pariatur reiciendis illo error sapiente laudantium sed laboriosam ipsa tenetur odio quia accusantium numquam, facilis saepe minima facere molestiae laborum.
                     Vitae, ipsum repudiandae cum autem consectetur beatae molestiae magni corrupti quaerat iusto nisi veritatis earum illum impedit dolor repellat ipsa labore exercitationem suscipit. Eius delectus fugit, quia unde eum illo.</p>
                 </div>
             </div>
         </section>
-        <section class="row d-flex justify-content-center align-items-center" >
+        <!--Sección destacados-->
+        <section class="row d-flex justify-content-center align-items-center" id="destacados">
             <h2 class="text-center">Destacados</h2>
             <hr>
             <div class="row col-12 gap-2 justifice row d-flex justify-content-center align-items-center">
@@ -128,7 +132,8 @@
                 </div>
             </div>
         </section>
-        <section class="mt-5">
+        <!--Sección contacto-->
+        <section class="mt-5" id="contacto">
             <br>
             <h2 class="text-center" id="contacto">CONTACTO</h2>
             <hr>
@@ -146,7 +151,7 @@
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Escribe aquí tu mensaje"></textarea>
             </div>
             <div class="col-auto d-flex flex-row-reverse">
-                <button type="submit" class="btn btn-info mb-3 text-light">Enviar</button>
+                <button type="submit" class="btn btn-info mb-3 text-light" id="enviarCorreo">Enviar</button>
             </div>
         </section>
     </main>
@@ -157,14 +162,16 @@
                 <p>VIAJES CHILE</p>
             </div>
             <div >
-                <i class="fa-brands fa-github"></i>
-                <i class="fa-brands fa-linkedin"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-github" data-toggle="tooltip" title="GitHub"></i>
+                <i class="fa-brands fa-linkedin" data-toggle="tooltip" title="Linkedin"></i>
+                <i class="fa-brands fa-twitter" data-toggle="tooltip" title="Twitter"></i>
+                <i class="fa-brands fa-facebook" data-toggle="tooltip" title="Facebbok"></i>
             </div>
         </div>
     </footer>
     <!--Boostrap V5.2-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <!--Scripts js propio-->
+    <script src="./assets/js/scripts.js"></script>
 </body>
 </html>
